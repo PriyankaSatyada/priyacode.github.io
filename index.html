@@ -75,10 +75,13 @@ margin-right:0px !important;
 }
 /* offer campaigns css starts */
 
-            
+            .offers-campaigns-p{
+
+
+            }
     
-        }
-       /* @media screen and (min-width:768px) { */
+ }
+       @media screen and (min-width:768px) {
                     
                 /* Create four equal columns that floats next to each other */
                 .hindware-higlight-column {
@@ -176,7 +179,50 @@ margin-right:0px !important;
                     margin-top:10px;
                 }
                 
-  /* } */
+  }
+/* offer campaigns mobile css starts */
+@media screen and (max-width:767px) {
+ 
+.odesktop{
+display:none;
+}
+.omobile{
+padding: 13px 25px;
+display:block;
+}
+}
+@media screen and (min-width:768px) {
+.odesktop{
+display:block;
+}
+.omobile{
+display:none;
+}
+}
+@media screen and (max-width:767px) {
+.offers-campaigns-div .offers-campaigns-p{
+    font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+text-transform: uppercase;
+color: #000000;
+
+}
+.offers-campaigns-div .offers-campaigns-second {
+    font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+text-align: center;
+color: rgba(0, 0, 0, 0.4);
+}
+}
+
+/* offer campaigns mobile css starts */
   ul li{
       list-style: none;
     
@@ -242,6 +288,10 @@ padding-top: 15px;
     /*best seller css starts */
 
 
+
+   
+
+   
     /* shopby category css starts */
     .shoby-card {
         background: #FFFFFF;
@@ -279,13 +329,31 @@ padding-top:10px;
 
 
  /* shopby products slider css starts */
+
+
+ /* shopby section mobile css starts */
  @media screen and (max-width:767px) {
+ .offers-campaigns-div .shoby-cards-row {
+    margin: auto !important;
+}
+
+.offers-campaigns-div .shoby-cards-column {
+    float: left;
+    width: auto;
+    padding: 0 10px;
+}
+
     #va_container {
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 277px !important;
+    /* max-width: 277px !important; */
     
+}
+#va_container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0px;
 }
     .hinprodcard .va-card {
     /* width: 100px; */
@@ -576,6 +644,38 @@ display:none;
                 }
 
  /* product vide css  */
+
+ /* product features mobile css starts */
+
+ @media screen and (max-width:767px) {
+ .productfeatures-video .offers-campaigns-p {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: auto;
+    display: block !important;
+}
+.productfeatures-video .productfeaturesp-p {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+/* or 143% */
+     text-align: center;
+     color: rgba(0, 0, 0, 0.4);
+}
+ }
+
+
+
+
+ /* product features mobile css starts */
+
 
  /* testimony div css starts */
  .testimonial-div{
@@ -1226,8 +1326,10 @@ color: #000000;
       <div class="offers-campaigns-div">
         <div style="text-align: center;">
             <p class="offers-campaigns-p">OFFERS / CAMPAIGNS</p>
-            <p class="offers-campaigns-second">After record sales, companies in the hindware extended their campaigns until Sunday,July 31 2022, <br>
+            <p class="offers-campaigns-second odesktop">After record sales, companies in the hindware extended their campaigns until Sunday,July 31 2022, <br>
                 which includes up to 40% off and 12 interest-free installments.</p>
+                <p class="offers-campaigns-second omobile">After record sales, companies in the hindware extended their campaigns until Sunday,July 31 2022,
+                    which includes up to 40% off and 12 interest-free installments.</p>
                 <button class="homepage-offer-btn">View All Offers</button>
         </div>
 <!--  multiple grids first fold -->
@@ -1259,8 +1361,10 @@ color: #000000;
 <div class="offers-campaigns-div best-sellers-div" >
     <div style="text-align: center;">
         <p class="offers-campaigns-p">BEST SELLER</p>
-        <p class="offers-campaigns-second">Top Selling Appliances Checkout Most Sold Washing Machines, Aircooler,<br>
+        <p class="offers-campaigns-second odesktop">Top Selling Appliances Checkout Most Sold Washing Machines, Aircooler,<br>
             Dishwashers, Chimney, And Other Appliances on IOT.</p>
+            <p class="offers-campaigns-second omobile">Top Selling Appliances Checkout Most Sold Washing Machines, Aircooler,
+                Dishwashers, Chimney, And Other Appliances on IOT.</p>
             <button class="homepage-offer-btn">View All </button>
     </div>
 <div class="multiplegrids-second-fold-div" style="display: flex;margin-top:40px">
@@ -1295,8 +1399,10 @@ color: #000000;
 <div class="offers-campaigns-div">
     <div style="text-align: center;">
         <p class="offers-campaigns-p">Shop by Category</p>
-        <p class="offers-campaigns-second">Shop by Category page out of the box, where you can navigate to relevant <br>
+        <p class="offers-campaigns-second odesktop">Shop by Category page out of the box, where you can navigate to relevant <br>
             products based on your needs without having to use filters right away.</p>
+            <p class="offers-campaigns-second omobile">Shop by Category page out of the box, where you can navigate to relevant <br>
+                products based on your needs without having to use filters right away.</p>
             
     </div>
 
@@ -1507,8 +1613,10 @@ initDealCarrousel('va_container'); //carrousel ID
 
 <div class="productfeatures-video">
     <p class="offers-campaigns-p" style="text-align: center;">PRODUCT FEATURES</p>
-    <p class="productfeaturesp-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br> the
+    <p class="productfeaturesp-p odesktop">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br> the
       industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+      <p class="productfeaturesp-p omobile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been  the
+        industry's standard dummy text ever since the 1500s, when an unknown printer</p>
   </div>
   
   <!-- video section starts -->
